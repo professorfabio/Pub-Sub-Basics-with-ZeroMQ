@@ -1,4 +1,4 @@
-import zmq, time
+import zmq, time, random
 from constPS import * #-
 
 context = zmq.Context()
@@ -9,3 +9,7 @@ while True:
 	time.sleep(5)                    # wait every 5 seconds
 	msg = str.encode("TIME " + time.asctime())
 	s.send(msg) # publish the current time
+
+	rand = random.randint(0,1000)
+	msg = str.encode("RAND " + rand)
+	s.send(msg)
