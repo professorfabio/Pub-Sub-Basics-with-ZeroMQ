@@ -11,5 +11,5 @@ while True:
 	s.send(msg) # publish the current time
 
 	rand = random.randint(0,1000)
-	msg = str.encode("RAND " + rand)
+	msg = str.encode("RAND " + str(rand))
 	s.send(msg)
