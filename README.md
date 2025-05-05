@@ -4,5 +4,6 @@ This is a very simple pub-sub app implemented with ZeroMQ. Use it as an example 
 
 # First, install ZeroMQ:
 
-sudo apt update
-sudo apt install python3-zmq
+    sudo apt update
+
+    sudo apt install python3-zmq
