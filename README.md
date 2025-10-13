@@ -8,6 +8,15 @@ This is a very simple pub-sub app implemented with ZeroMQ. Use it as an example 
 
     sudo apt install python3-zmq
 
+### Or, with virtual environments (also on each machine -- only install pip3 and venv if not yet installed):
+
+    sudo apt update
+    sudo apt install python3-pip
+    sudo apt install python3-venv
+    python3 -m venv myvenv
+    source myvenv/bin/activate
+    pip3 install pyzmq
+
 ### Next, configure the IP address and port number of the publisher's machine in the constPS.py file
 
 Note: Make sure that this repo is cloned in all the machines used for this experiment.
